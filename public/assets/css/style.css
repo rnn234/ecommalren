@@ -50,7 +50,8 @@
     /* text-align: center; */
     top: 5rem;
     left: 10rem;
-    height: 70%;
+    height: 100%;
+    max-height: 80%;
     position: absolute;
     display: block;
     background-color: #fff7e0;
@@ -83,19 +84,17 @@
 }
 
 .login-form a {
-    margin-bottom: 15px;
     font-size: 0.9rem;
-    color: #007bff;
-    text-decoration: none;
     text-decoration: none;
     float: right;
-    margin-left: 15rem;
+    margin-left: 14.6rem;
+    color: black;
 }
-.login-form a:hover {
+/* .login-form a:hover {
     text-decoration: underline;
-}
+} */
 .login-form .button {
-    padding: 10px 20px;
+    padding: 6px 20px;
     font-size: 1rem;
     background-color: #3e3e3e;
     color: #fff;
@@ -103,4 +102,19 @@
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+.login-form .button-signup {
+    padding: 6px 20px;
+    margin-right: 3.6rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+    background-color: #3e3e3e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 70%;
+    left: 0;
+    text-align: center;
 }

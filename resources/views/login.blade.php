@@ -12,7 +12,7 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     <!-- Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body>
@@ -23,17 +23,17 @@
                 adventure begins here
             </h1>
             <p>Login to access</p>
-            <img src="assets/img/loginvektor.png" alt="">
+            <img src="{{ asset('assets/img/loginvektor.png') }}" alt="">
         </div>
         <div class="login-content-kanan">
             <div class="login-form">
-                <h3>Login</h3>
+                <h3>Sign In</h3>
                 <form action="">
                     <input type="text" name="" id="username" placeholder="Username">
                     <input type="password" name="" id="password" placeholder="Password">
-                    <a href="">Forgot Password ?</a>
-                    <input type="submit" value="Login" class="button">
+                    <input type="submit" value="Sign In" class="button">
                 </form>
+                <a href="/register" class="button-signup">Sign Up</a>
             </div>
         </div>
     </div>
