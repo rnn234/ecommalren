@@ -1,48 +1,43 @@
-<x-guest-layout>
-    <x-authentication-card>
-        <x-slot name="logo">
-            <x-authentication-card-logo />
-        </x-slot>
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-        <x-validation-errors class="mb-4" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        @session('status')
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ $value }}
+    <title>Login</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+</head>
+
+<body>
+    <div class="login-content">
+        <div class="login-content-kiri">
+            <h1> Your <span>Shopping</span>
+                <br>
+                adventure begins here
+            </h1>
+            <p>Login to access</p>
+            <img src="{{ asset('assets/img/loginvektor.png') }}" alt="">
+        </div>
+        <div class="login-content-kanan">
+            <div class="login-form">
+                <h3>Sign In</h3>
+                <form action="">
+                    <input type="text" name="" id="username" placeholder="Username">
+                    <input type="password" name="" id="password" placeholder="Password">
+                    <input type="submit" value="Sign In" class="button">
+                </form>
+                <a href="/register" class="button-signup">Sign Up</a>
             </div>
-        @endsession
+        </div>
+    </div>
 
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
+</body>
 
-            <div>
-                <x-label for="email" value="{{ __('Email') }}" />
-                <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            </div>
-
-            <div class="mt-4">
-                <x-label for="password" value="{{ __('Password') }}" />
-                <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-            </div>
-
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <x-checkbox id="remember_me" name="remember" />
-                    <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-button class="ms-4">
-                    {{ __('Log in') }}
-                </x-button>
-            </div>
-        </form>
-    </x-authentication-card>
-</x-guest-layout>
+</html>
