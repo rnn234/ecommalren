@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-content {
+    background-color: #f6c743;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.login-content-kiri {
+    width: 50%;
+    display: block;
+}
+.login-content .login-content-kiri h1 {
+    margin-top: 3rem;
+    margin-left: 3rem;
+    color: white;
+    font-size: 2.6rem;
+}
+.login-content .login-content-kiri h1 span {
+    color: #686767;
+}
+.login-content .login-content-kiri p {
+    margin-top: 0.2rem;
+    margin-left: 3rem;
+    font-size: 1.4rem;
+    color: white;
+}
+.login-content .login-content-kiri img {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    width: 450px;
+    height: 450px;
+}
+
+.login-content-kanan {
+    display: block;
+    position: relative;
+    background-color: white;
+    width: 50%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.login-content-kanan .login-form {
+    width: 100%;
+    max-width: 400px;
+    /* text-align: center; */
+    top: 5rem;
+    left: 10rem;
+    height: 70%;
+    position: absolute;
+    display: block;
+    background-color: #fff7e0;
+    border-radius: 2rem;
+}
+.login-content-kanan .login-form h3 {
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+}
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+.login-form input {
+    width: 70%;
+    font-size: 1rem;
+    margin-top: 3rem;
+    margin-left: 4rem;
+    background-color: transparent; /* Transparan */
+    border: none; /* Hilangkan semua border */
+    border-bottom: 2px solid #ccc; /* Hanya border bawah */
+    outline: none; /* Hilangkan outline saat fokus */
+    color: #333; /* Warna teks pengguna */
+    transition: border-color 0.3s; /* Animasi untuk efek fokus */
+}
+.login-form .input::placeholder {
+    color: black;
+}
+
+.login-form a {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #007bff;
+    text-decoration: none;
+    text-decoration: none;
+    float: right;
+    margin-left: 15rem;
+}
+.login-form a:hover {
+    text-decoration: underline;
+}
+.login-form .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #3e3e3e;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
