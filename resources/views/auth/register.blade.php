@@ -33,7 +33,7 @@
                     <input type="text" name="" id="email" placeholder="Email">
                     <input type="text" name="" id="no handphone" placeholder="No Handphone">
                     <input type="password" name="" id="password" placeholder="Password">
-                    <a href="/">Have an Acoount ?</a>
+                    <a href="/login" class="have-an-account ">Have an Acount ?</a>
                     <input type="submit" value="Sign Up" class="button">
                 </form>
             </div>

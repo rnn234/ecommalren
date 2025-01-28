@@ -39,23 +39,24 @@
                 <!-- Form Login -->
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
-                    <input type="email" id="email" name="email" class="input-field" 
-                        placeholder="Email" value="{{ old('email') }}" required autofocus autocomplete="username">
-                    
-                    <input type="password" id="password" name="password" class="input-field" 
-                        placeholder="Password" required autocomplete="current-password">
-                    
+                    <input type="email" id="email" name="email" class="input-field" placeholder="Email"
+                        value="{{ old('email') }}" required autofocus autocomplete="username">
+
+                    <input type="password" id="password" name="password" class="input-field" placeholder="Password"
+                        required autocomplete="current-password">
+                    <!-- Forgot Password -->
+                    @if (Route::has('password.request'))
+                        <a href="{{ route('password.request') }}" class="button-forgot-password">Forgot your
+                            password?</a>
+                    @endif
+
                     {{-- <label for="remember_me" class="flex items-center">
                         <input id="remember_me" type="checkbox" class="remember-me-checkbox" name="remember">
                         <span class="ms-2 text-sm text-gray-600">Remember me</span>
                     </label> --}}
-                    
+
                     <input type="submit" value="Sign In" class="button">
 
-                    <!-- Forgot Password -->
-                    @if (Route::has('password.request'))
-                        <a href="{{ route('password.request') }}" class="button-forgot-password">Forgot your password?</a>
-                    @endif
                 </form>
 
                 <!-- Sign Up -->
