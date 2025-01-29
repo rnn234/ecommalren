@@ -39,21 +39,14 @@
 
     <main>
         <div class="carousel">
-            <div class="carousel-track">
-                <div class="carousel-item">
-                    <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Slide 2">
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Slide 3">
-                </div>
-                <div class="carousel-item">
-                    <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Slide 4">
-                </div>
+            <div class="carousel-items">
+                <div class="carousel-item"><img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Image 1"></div>
+                <div class="carousel-item"><img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Image 2"></div>
+                <div class="carousel-item"><img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Image 3"></div>
+                <!-- Tambahkan gambar lainnya sesuai kebutuhan -->
             </div>
         </div>
+
 
         <section class="kategori">
             <h2>Our Categories</h2>
@@ -76,6 +69,108 @@
                         <img src="{{ asset('assets/img/elektronik.png') }}" alt="">
                     </div>
                 </a>
+            </div>
+        </section>
+
+        <section class="flashsale">
+            <h2>Flash Sale !</h2>
+            <div class="container-card-flashsale">
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
+                <div class="card-flashsale">
+                    <div class="img-flashsale">
+                        <img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="">
+                    </div>
+                    <div class="judul">
+                        <p>Beras misal</p>
+                        <p class="harga">Rp 25.000</p>
+                    </div>
+                    <div class="deskripsi">
+                        <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
+                    </div>
+                </div>
             </div>
         </section>
 
