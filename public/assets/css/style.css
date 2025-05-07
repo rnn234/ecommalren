@@ -364,7 +364,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -380,7 +380,7 @@ body {
     overflow-y: hidden; /* Mencegah scroll vertikal */
     white-space: nowrap; /* Mencegah elemen turun ke bawah */
     scroll-snap-type: x mandatory; /* Scroll snapping */
-    padding: 1rem 8.6rem 1rem 8.6rem;
+    /* padding: 1rem 8.6rem 1rem 8.6rem; */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling di mobile */
 
     /* Mencegah scroll melewati kartu terakhir */
