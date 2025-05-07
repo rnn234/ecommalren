@@ -32,44 +32,34 @@
             <ion-icon name="search" class="icon-search"></ion-icon>
         </div>
         <div class="header-icons">
-            @if (Route::has('login'))
-            <nav class="flex items-center justify-end gap-4">
-            @auth
             <a href=""><ion-icon name="cart" class="icon-header"></ion-icon></a>
-            <form method="POST" action="{{ route('logout') }}" class="inline">
-                @csrf
-                <button type="submit" class="nav-link">Log Out</button>
-            </form>
-            @else
-                <a href="{{ Auth::check() ? route('profile') : '#' }}" id="nav-link">
-                    <ion-icon name="person" class="icon-header"></ion-icon>
-                </a>
+            <a href="{{ Auth::check() ? route('profile') : '#' }}" id="profile-link">
+                <ion-icon name="person" class="icon-header"></ion-icon>
+            </a>
             
-            
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const profileLink = document.getElementById("nav-link");
-                        profileLink.addEventListener("click", function (event) {
-                            if (!@json(Auth::check())) {
-                                event.preventDefault();
-                                Swal.fire({
-                                    title: 'Oops!',
-                                    text: 'Anda harus login terlebih dahulu!',
-                                    icon: 'warning',
-                                    confirmButtonText: 'OK'
-                                }).then((result) => {
-                                    if (result.isConfirmed) {
-                                        window.location.href = "{{ route('login') }}";
-                                    }
-                                });
-                            }
-                        });
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const profileLink = document.getElementById("profile-link");
+                    profileLink.addEventListener("click", function (event) {
+                        if (!@json(Auth::check())) {
+                            event.preventDefault();
+                            Swal.fire({
+                                title: 'Oops!',
+                                text: 'Anda harus login terlebih dahulu!',
+                                icon: 'warning',
+                                confirmButtonText: 'OK'
+                            }).then((result) => {
+                                if (result.isConfirmed) {
+                                    window.location.href = "{{ route('login') }}";
+                                }
+                            });
+                        }
                     });
+                });
 
-                </script>
-            @endauth
-            @endif
+            </script>
+            
         </div>
     </header>
 

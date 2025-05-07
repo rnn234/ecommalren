@@ -431,6 +431,55 @@ body {
     overflow: hidden; /* Pastikan tidak keluar dari card */
 }
 
+footer{
+    background-color: #f6c743;
+    height: 40vh;
+}
+.footer-logo{
+    margin-left: 8.6rem;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+}
+.footer-menu{
+    display: flex;
+    /* padding: 200px; */
+    justify-content: space-around;
+    margin-left: 2.2rem;
+    padding-top: 1rem;
+}
+.footer-down{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.footer-img-display{
+    display: flex;
+    gap: 1rem;
+}
+.footer-down .footer-img{
+    display: flex;
+    background-color: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.footer-img img{
+    width: 60%;
+    /* height: 100%;/ */
+    /* border-radius: 50%; */
+    /* content */
+    /* padding: rem; */
+}
 /* Hilangkan scrollbar di Chrome, Edge, dan Safari */
 /* .container-card-flashsale::-webkit-scrollbar {
     display: none;

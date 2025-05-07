@@ -5,54 +5,57 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
 
 class AuthenticatedSessionController extends Controller
 {
     /**
-     * Show the login form.
-     *
-     * @return \Illuminate\View\View
+     * Menampilkan form login.
      */
     public function create()
     {
-        return view('auth.login'); // Menampilkan form login
+        return view('auth.login');
     }
 
     /**
-     * Handle an incoming login request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
+     * Proses login user.
      */
     public function store(Request $request)
     {
-        $request->validate([
+        // Validate the request data
+        $credentials = $request->validate([
             'email' => ['required', 'email'],
-            'password' => ['required', 'string'],
+            'password' => ['required'],
         ]);
 
-        if (Auth::attempt($request->only('email', 'password'), $request->filled('remember'))) {
+        // Attempt authentication
+        if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();
 
-            return redirect()->intended('/dashboard'); // Ganti sesuai halaman setelah login
+            // Redirect based on role
+            return redirect()->intended(match (Auth::user()->role) {
+                'admin' => '/admin',
+                'seller' => '/seller',
+                'customer' => '/customer',
+                default => '/',
+            });
         }
 
+        // If authentication fails
         return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ]);
+            'email' => 'Email atau password salah.',
+        ])->onlyInput('email');
     }
 
     /**
-     * Log the user out of the application.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
+     * Logout user dari aplikasi.
      */
     public function destroy(Request $request)
     {
-        Auth::logout();
+        Auth::guard('web')->logout();
 
         $request->session()->invalidate();
+
         $request->session()->regenerateToken();
 
         return redirect('/');
