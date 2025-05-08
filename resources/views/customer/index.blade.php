@@ -33,49 +33,61 @@
         </div>
         <div class="header-icons">
             @if (Route::has('login'))
-            <nav class="flex items-center justify-end gap-4">
-            @auth
-            <div class="cartdanlogout">
-                <a href=""><ion-icon name="cart" class="icon-header"></ion-icon></a>
-                <form method="POST" action="{{ route('logout') }}" class="inline">
-                    @csrf
-                    <button type="submit" class="nav-link"><ion-icon name="log-out-outline" class="logout"></ion-icon></button>
-                </form>
-            </div>
-            @else
-                <a href="{{ Auth::check() ? route('profile') : '#' }}" id="nav-link">
-                    <ion-icon name="person" class="icon-header"></ion-icon>
-                </a>
+                <nav class="flex items-center justify-end gap-4">
+                    @auth
+                        <div class="cartdanlogout">
+                            <a href=""><ion-icon name="cart" class="icon-header"></ion-icon></a>
+                            <form method="POST" action="{{ route('logout') }}" class="inline">
+                                @csrf
+                                <button type="submit" class="nav-link"><ion-icon name="log-out-outline"
+                                        class="logout"></ion-icon></button>
+                            </form>
+                        </div>
+                    @else
+                        <a href="{{ Auth::check() ? route('profile') : '#' }}" id="nav-link">
+                            <ion-icon name="person" class="icon-header"></ion-icon>
+                        </a>
 
 
-                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        const profileLink = document.getElementById("nav-link");
-                        profileLink.addEventListener("click", function (event) {
-                            if (!@json(Auth::check())) {
-                                event.preventDefault();
-                                Swal.fire({
-                                    title: 'Oops!',
-                                    text: 'Anda harus login terlebih dahulu!',
-                                    icon: 'warning',
-                                    confirmButtonText: 'OK'
-                                }).then((result) => {
-                                    if (result.isConfirmed) {
-                                        window.location.href = "{{ route('login') }}";
+                        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                const profileLink = document.getElementById("nav-link");
+                                profileLink.addEventListener("click", function(event) {
+                                    if (!@json(Auth::check())) {
+                                        event.preventDefault();
+                                        Swal.fire({
+                                            title: 'Oops!',
+                                            text: 'Anda harus login terlebih dahulu!',
+                                            icon: 'warning',
+                                            confirmButtonText: 'OK'
+                                        }).then((result) => {
+                                            if (result.isConfirmed) {
+                                                window.location.href = "{{ route('login') }}";
+                                            }
+                                        });
                                     }
                                 });
-                            }
-                        });
-                    });
-
-                </script>
-            @endauth
+                            });
+                        </script>
+                    @endauth
             @endif
         </div>
     </header>
 
     <main>
+        @if (session('status'))
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Sukses!',
+                    text: '{{ session('status') }}',
+                    confirmButtonColor: '#3085d6'
+                });
+            </script>
+        @endif
+
         <div class="carousel">
             <div class="carousel-items">
                 <div class="carousel-item"><img src="{{ asset('assets/img/shopedia.jpeg') }}" alt="Image 1"></div>

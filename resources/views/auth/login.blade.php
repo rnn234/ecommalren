@@ -28,13 +28,24 @@
         <div class="login-content-kanan">
             <div class="login-form">
                 <h3>Login</h3>
-                <x-validation-errors class="mb-4" /> <!-- Validasi Error -->
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                @if ($errors->any())
+                    <script>
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Terjadi Kesalahan',
+                            html: `{!! implode('<br>', $errors->all()) !!}`,
+                            confirmButtonColor: '#d33'
+                        });
+                    </script>
+                @endif
 
+                {{-- <x-validation-errors class="mb-4" /> <!-- Validasi Error -->
                 @if (session('status'))
                     <div class="mb-4 font-medium text-sm text-green-600">
                         {{ session('status') }}
                     </div>
-                @endif
+                @endif --}}
 
                 <!-- Form Login -->
                 <form method="POST" action="{{ route('login') }}">

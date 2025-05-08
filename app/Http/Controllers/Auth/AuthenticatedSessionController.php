@@ -32,13 +32,14 @@ class AuthenticatedSessionController extends Controller
         if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();
 
+
             // Redirect based on role
             return redirect()->intended(match (Auth::user()->role) {
                 'admin' => '/admin',
                 'seller' => '/seller',
                 'customer' => '/customer',
                 default => '/',
-            });
+            })->with('status', 'Login berhasil!');
         }
 
         // If authentication fails

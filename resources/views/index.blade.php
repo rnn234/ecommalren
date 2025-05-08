@@ -122,6 +122,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -134,6 +135,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -146,6 +148,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -158,6 +161,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -170,6 +174,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -182,6 +187,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -194,6 +200,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -206,6 +213,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
         </div>
     </section>
@@ -224,6 +232,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -236,6 +245,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -248,6 +258,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -260,6 +271,8 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -272,6 +285,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -284,6 +298,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -296,6 +311,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
             <div class="card-flashsale">
                 <div class="img-flashsale">
@@ -308,6 +324,7 @@
                 <div class="deskripsi">
                     <p>deskripsilah intinya mah lorem ipsum sebelehkitiw acikiwir awas ada sule spontan uhuy </p>
                 </div>
+                <a href="" class="button-flashsale">Add to Cart</a>
             </div>
         </div>
     </section>
