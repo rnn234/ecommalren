@@ -27,7 +27,7 @@
         <!-- Bagian Kanan -->
         <div class="login-content-kanan">
             <div class="login-form">
-                <h3>Sign In</h3>
+                <h3>Login</h3>
                 <x-validation-errors class="mb-4" /> <!-- Validasi Error -->
 
                 @if (session('status'))
@@ -55,12 +55,12 @@
                         <span class="ms-2 text-sm text-gray-600">Remember me</span>
                     </label> --}}
 
-                    <input type="submit" value="Sign In" class="button">
+                    <input type="submit" value="Login" class="button">
 
                 </form>
 
                 <!-- Sign Up -->
-                <a href="/register" class="button-signup">Sign Up</a>
+                <a href="/register" class="button-signup">Register</a>
             </div>
         </div>
     </div>
