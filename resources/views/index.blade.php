@@ -38,14 +38,14 @@
             <a href=""><ion-icon name="cart" class="icon-header"></ion-icon></a>
             <form method="POST" action="{{ route('logout') }}" class="inline">
                 @csrf
-                <button type="submit" class="nav-link">Log Out</button>
+                <button type="submit" class="nav-link"><ion-icon name="log-out-outline"></ion-icon></button>
             </form>
             @else
                 <a href="{{ Auth::check() ? route('profile') : '#' }}" id="nav-link">
                     <ion-icon name="person" class="icon-header"></ion-icon>
                 </a>
-            
-            
+
+
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {

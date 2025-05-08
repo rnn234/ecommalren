@@ -213,7 +213,12 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
 }
-
+.cartdanlogout{
+    display: flex;
+}
+.logout{
+    font-size: 1.6rem;
+}
 /* Header css */
 
 /* CAROUSEL CSS */

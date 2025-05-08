@@ -35,17 +35,19 @@
             @if (Route::has('login'))
             <nav class="flex items-center justify-end gap-4">
             @auth
-            <a href=""><ion-icon name="cart" class="icon-header"></ion-icon></a>
-            <form method="POST" action="{{ route('logout') }}" class="inline">
-                @csrf
-                <button type="submit" class="nav-link">Log Out</button>
-            </form>
+            <div class="cartdanlogout">
+                <a href=""><ion-icon name="cart" class="icon-header"></ion-icon></a>
+                <form method="POST" action="{{ route('logout') }}" class="inline">
+                    @csrf
+                    <button type="submit" class="nav-link"><ion-icon name="log-out-outline" class="logout"></ion-icon></button>
+                </form>
+            </div>
             @else
                 <a href="{{ Auth::check() ? route('profile') : '#' }}" id="nav-link">
                     <ion-icon name="person" class="icon-header"></ion-icon>
                 </a>
-            
-            
+
+
                 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
                 <script>
                     document.addEventListener("DOMContentLoaded", function () {
